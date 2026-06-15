@@ -15,5 +15,5 @@ def show_model(model):
     if model in existing_models:
         response = f"Flatiron {model} is in our fleet!"
     else:
-        response = f"No models called {model} exists in our catalog."
+        response = f"No models called {model} exists in our catalog"
     return response
