@@ -10,7 +10,7 @@ app = Flask(__name__)
 def home():
     return "Welcome to Flatiron Cars"
 
-@app.route("<model>")
+@app.route("/<model>")
 def show_model(model):
     if model in existing_models:
         print (f"Flatiron {model} is in our fleet!")
