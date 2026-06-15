@@ -13,7 +13,7 @@ def home():
 @app.route("/<model>")
 def show_model(model):
     if model in existing_models:
-        print (f"Flatiron {model} is in our fleet!")
+        response = f"Flatiron {model} is in our fleet!"
     else:
-        print (f"No models called {model} exists in our catalog.")
-
+        response = f"No models called {model} exists in our catalog."
+    return response
